@@ -1,0 +1,6 @@
+
+* {
+	box-sizing: border-box; /* content-box */
+	box-shadow: 1px 2px 3px 4px red inset; /* x, y, blur, spread, color */
+	
+}
