@@ -96,6 +96,7 @@ h1 {
 	text-align: center;
 	text-decoration: none;
 	text-shadow: 1px 1px 5px red; /* x, y, blur, color */
+	text-transform: uppercase;
 }
 
 ul li a:hover {
