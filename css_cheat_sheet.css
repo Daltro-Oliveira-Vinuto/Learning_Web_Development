@@ -18,7 +18,6 @@
 
 	float: left; /* none, right, clear: both */
 	clear: both;
-	justify-content: ;
 
 	display: block; /* none, inline */
 	display: grid;
@@ -40,7 +39,7 @@
 	background-color: #fff;
 	background-image: url("../imgs/babyYoda.jpg");
 	background-size: contain; /* cover */
-	background-position: center center;
+	background-position: center center; /* left top, left bottom, etc.. */
 	background-repeat: repeat-x; /* repeat, no-repeat, repeat-y */
 	background-attachment: fixed; /* scroll */
 
@@ -66,6 +65,7 @@
 	0% {
 		background: blue;
 		transform: translate(100px, 0) rotate(45deg) scale(1.5, 1.5) ;
+		/* skewX(), skewY(), matrix() */
 
 
 	}
@@ -83,9 +83,9 @@
 
 h1 {
 	font-family: Zombie;
-	font-size: 2em;
-	font-weight: bold;
-	font-style: oblique;
+	font-size: 2em; 
+	font-weight: bold; /* normal, bolder */
+	font-style: oblique; /* normal */
 
 	color: blue;
 
@@ -94,9 +94,9 @@ h1 {
 
 	text-indent: 1em;
 	text-align: center;
-	text-decoration: none;
+	text-decoration: none; /* line-through, underline, overline */
 	text-shadow: 1px 1px 5px red; /* x, y, blur, color */
-	text-transform: uppercase;
+	text-transform: uppercase; /* lowercase */
 }
 
 ul li a:hover {
