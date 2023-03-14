@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/jpg" href="icons/babyYoda.jpg">
+	<title>&#128151 HomePage &#128151 </title>
+
+	<style type="text/css">
+		table {
+			border-collapse: collapse;
+			position: relative;
+			left: 40%;
+		}
+
+		td,th {
+			border: 1px solid lightgreen;
+		}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<link rel="stylesheet" type="text/css" href="css/page_style.css">
+
+	<!--[if lt IE 9]>
+		<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body style="margin-top: 0;"">
+	<header class="maybe_unnecessary_class">
+		<a href="">
+			<img src="">
+		</a>
+
+		<h1 >
+			Home Page 
+			<span style="font-size: 1.5em">&#129302; &#128125;&#128030; &#129419; 
+			</span>
+		</h1>
+		<h2 > 
+			&#128512 Welcome &#127800; &#128144;
+		</h2>
+		<h6 class="">Small Header</h6>
+	</header>
+  	
+	<nav>
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">News</a></li>
+			<li><a href="">Contacts</a></li>
+		</ul>
+	</nav>
+
+	<div id="root">
+		<time> <code>01/01/2100</code> </time>
+		<hr>
+
+		<aside></aside>
+
+		<section id="section_1"></section>
+
+		<section id="section_2">
+			<form method="GET" action="">
+				<fieldset>
+					<legend>Login</legend>
+
+					<label for="user_name">Name:</label>
+					<input type="text" id="user_name" name="data-name"
+					placeholder="Type your name here" autofocus required >
+
+
+					<label for="user_password">Password</label>
+					<input type="password" id="user_password" name="data-password" required>
+
+					<lable for="reset_password">Reset password file:</lable>
+					<input type="file" id="reset_password" name="file-for-reset-password">
+
+					<input type="submit" value="Log In">
+
+				</fieldset>
+
+			</form>
+
+			<br>
+			<hr>
+			<br>
+
+			<!-- others types of inputs:
+				<input type="email" name="" id="">
+				<input type="url" name="" id="">
+				<input type="search" name="" id="">
+				<input type="color" name="" id="" value="#FF0000">
+				<input type="range" name="" id="" min="" max="" value="">
+				<input type="number" name="" id="" min="" max="" value="" step="">
+			-->
+			<form method="GET" action="">
+				<fieldset>
+					<legend>Satisfaction Research</legend>
+
+					<label for="satisfaction">Satisfaction level:</label>
+					<select id="satisfaction" name="satiscfation-value">
+						<option value="3">Good</option>
+						<option value="2">Average</option>
+						<option value="1">Bad</option>
+					</select>
+
+					<h2> Will you buy again?
+						<span style="font-size: 0.5em">
+						(All radio buttons must have the same name attribute)</span>
+					</h2>
+					<label for="no-buy">No<input type="radio" id="no-buy" name="buy_again" value="no">
+					<label for="yes-buy">Yes<input type="radio" id="yes-buy" name="buy_again" value="yes">
+
+					<!-- <input type="checkbox" name="" id=""> -->
+
+					<br>
+
+					<label for="comments">Comment area:</label>
+					<textarea id="comments" name="comments-text">Enter your comments here</textarea> 
+
+
+					<input type="submit" name="" value="send research">
+				</fieldset>
+			</form>
+
+		</section>
+
+		<section id="section_3">
+			<table>
+				<caption>Table1</caption>
+				<thead>
+					<tr>
+						<th>A</th>
+						<th>B</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+					</tr>
+				</tbody>
+
+				<tfoot>
+					<tr>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+				</tfoot>
+
+			</table>
+
+
+		</section>
+
+		<section id="section_n">
+			<article id="article_news"></article>
+
+			<article id="article_contacts">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</article>
+		</section>
+	</div>
+
+	<!-- This tag(Canvas) allows the creation of amazing games using just html, css and javascript -->
+	<!-- There's the possibility of increase the efficiency of the game by using WebAssembly(C/C++, Rust, etc..) -->
+	<canvas id="game_area" style="width: 100px; height: 100px; background: lightblue; position: relative; left: 40%"></canvas>
+
+	<footer style="font-size: 1.2em; color: blue; text-align: right; position: fixed; top:0; right: 0; background: lightgray;"> <em><strong> &copy;Copyright  &reg; </strong></em>  </footer>
+
+	<script type="text/javascript" src="js/page_script.js"></script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>

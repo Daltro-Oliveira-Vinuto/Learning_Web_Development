@@ -1,16 +1,32 @@
 
 * {
-	box-sizing: border-box; /* content-box */
-	box-shadow: 1px 2px 3px 4px red inset; /* x, y, blur, spread, color */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
 	width: 100%;
+	height: 100%;
+}
+
+body#homepage section.root {
+	box-sizing: border-box; /* content-box */
+	box-shadow: 1px 2px 3px 4px red inset,
+				-5px 20px 10px 20px #00FF00,
+				10px -20px 20px 10px rgba(0,0,255,0.5); /* x, y, blur, spread, color */
+	width: 70%; /* 70% of his parent container */
+	height: 50%; /* 50% of his parent container */
 	min-width: 200px;
 	max-width: 1080px;
-	height: 100%;
 	opacity: 1;
 	border: 1px solid red;
+	border-top: 5px dotted rgba(0,255,0,0.5);
+	border-bottom-style: dashed; /* none, hidden, ridge,outset,inset, double */
 	border-radius: 50%;
-	margin: 20px;
-	padding: 20;
+	margin: 20px auto;
+	padding: 10px 20px 30px 40px;
+	padding-left: 20%;
 
 	position: static; /* relative, absolute, fixed */
 	left: 0;
@@ -42,12 +58,46 @@
 	background-position: center center; /* left top, left bottom, etc.. */
 	background-repeat: repeat-x; /* repeat, no-repeat, repeat-y */
 	background-attachment: fixed; /* scroll */
+	background: #fff url("../imgs/babyYoda.jpg") contain center center no-repeat fixed;
 
+}
+
+body#homepage section.root p {
+	width: 50%; /* 50% of his parent(section.div) that has 50% of body(100%)
+	than p will have 50% of 50% of 100% ,in other words: 0.5*0.5*1.0 = 0.25, that
+	is 25% of the whole screen */
 }
 
 @font-face {
 	font-family: "Zombie";
 	src: url("../fonts/Zombie.woff");
+}
+
+header h1#home_title {
+	font-family: Zombie;
+	font-size: 2em; /* 2(twice) the font size of his parent */
+	font-weight: bold; /* normal, bolder */
+	font-style: oblique; /* normal */
+
+	color: blue;
+
+	line-height: 5em;
+	letter-spacing: 0.3em;
+
+	text-indent: 1em;
+	text-align: center;
+	text-decoration: none; /* line-through, underline, overline */
+	text-shadow: 1px 1px 5px red, 
+				-1px -1px 10px blue,
+				10px 5px 20px #00FF00; /* x, y, blur, color * <============ */
+	text-transform: uppercase; /* lowercase */
+}
+
+ul li:hover a {
+	color: green;
+	background: blue;
+	transition: all 3s; /* the same as: transition: color 3s, background 3s */
+
 }
 
 @keyframes animationA {
@@ -81,31 +131,8 @@
 	}
 }
 
-h1 {
-	font-family: Zombie;
-	font-size: 2em; 
-	font-weight: bold; /* normal, bolder */
-	font-style: oblique; /* normal */
 
-	color: blue;
-
-	line-height: 2em;
-	letter-spacing: 0.3em;
-
-	text-indent: 1em;
-	text-align: center;
-	text-decoration: none; /* line-through, underline, overline */
-	text-shadow: 1px 1px 5px red; /* x, y, blur, color */
-	text-transform: uppercase; /* lowercase */
-}
-
-ul li a:hover {
-	transition: all 3s; /* the same as: transition: color 3s, background 3s */
-	color: green;
-	background: blue;
-}
-
-section {
+#home_page section {
 	animation-name: animationA;
 	animation-duration: 3s;
 	animation-delay: 0s;
