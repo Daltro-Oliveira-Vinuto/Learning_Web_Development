@@ -145,3 +145,33 @@ ul li:hover a {
 article {
 	animation: animationB 5s 1s infinite reverse ease;
 }
+
+@media (min-width: 567px) {
+  body {
+    background: red;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background: green;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background: blue;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background: pink;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    background: yellow;
+  }
+}
